@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <title> Data Visualisation - Overview</title>
-  
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="comment.js"></script>
 </head>
 <body>
 
@@ -51,86 +52,67 @@
     <fieldset>
         
     <form method="post">
-        <legend>Personal Details</legend>
-            <ul>
-                <li>
-                    <label>First name:</label><br>
-                    <input type="text" name="firstname" value=""><br>
-                </li>
-                
-                <li>
-                    <label>Last name:</label><br>
-                    <input type="text" name="lastname" value=""><br>
-                </li>    
-                
-                <li>
-                    <label>Email:</label><br>
-                    <input type="text" name="email"><br>
-                </li>
-            </ul>  
-                
-                <fieldset class="radios">
-                    <ul>    
-                        <label>Gender:</label>
-                        <li>
-					       <input type="radio" id="gender_male" name="gender" value="male" />
-					       <label for="gender_male">Male</label>
-				        </li>
-                
-				        <li>
-                            <input type="radio" id="gender_female" name="gender" value="female" />
-                            <label for="gender_female">Female</label>
-				        </li>    					        
-                    </ul>    
-                </fieldset>
-        
-        
-        <legend>Address</legend>
-            <ul>
-                <li>
-                    <label for="address">Address:</label><br>
-                    <input type="text" name="firstname" value=""><br>
-                </li>
-                
-                <li>
-                    <label for="city">City:</label><br>
-                    <input type="text" name="lastname" value=""><br>
-                </li>
-                
-                <li>
-                    <label for="state">State:</label><br>
-                    <input type="text" name="lastname" value=""><br>
-                </li>
-                            
-                <li>
-				<label>
-					<legend>Message:</legend>
-				</label>
-					<textarea id="message" name="message"></textarea>
-					
-				</li>
+        <div class="container">
 
-             </ul>
-        <input type="submit" value="Submit">
-   </form> 
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">  
+    
+       <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+      
+    <label for="add">Address</label>
+    <input type="text" id="add" name="Address"> 
+    
+    <label for="city">City</label>
+    <input type="text" id="city" name="City"> 
+            
+    <label for="state">State</label>
+    <input type="text" id="state" name="State"> 
+    
+            
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="uk">United Kingdom</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">United States of America</option>
+    </select>  
+            
+            
+    <label for="message">Message</label>
+    <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
         
     </fieldset>
              
-    <title>Where am I?</title>
-    
+  <!--User comment list-->
+    <section id="Usercomments">
+        <form id="UserForm">
+            <fieldset>
+                <h3>Please leave a comment</h3>
+                <strong>Name</strong>
+                <input type ="text" id="txtName" size="35" placeholder="Name*">
+                <strong>Comment</strong>
+                <input type ="text" id="txtComment" size="50" placeholder="Comment*">
+                <input type ="button" id="submitbutton" value="Submit">
+                <ul id="listofusers">
 
-    <div id="location">
-		
-    </div>
+                <ul>
+            </fieldset>
+        </form>
+    </section>
+    <!--End User comment list-->
 
-	<div id="map">
-		
-    </div>
-
-
-    <footer>
-      
-	 </footer>
-	 
 </body>
 </html>

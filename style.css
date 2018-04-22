@@ -1,0 +1,335 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+  
+body {
+    font: normal .88em 'Consolas', arial, sans-serif;	 /* Main font of webpage */
+    background-image: url(images/simple.jpg);
+    background-size: auto;
+    }
+
+/*Styling and adding fonts fro paragraph*/
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+    text-align: justify;
+    font: 'Consolas 20px', serif;
+    font-size: 15;
+    font-style: normal;
+    
+  }
+  
+/*  Images Formating */
+  img {
+  max-width: 100%;
+  display: inline-block;
+}
+    /*  Creating responsive Images for desktops and mobiles*/
+@media (min-width: 420px) {
+    img {
+    max-width: 48%;
+  }
+}
+
+@media (min-width: 760px) {
+    img {
+    max-width: 84%;
+  }
+}
+  
+/*  Video Formating */
+      video {
+        max-width: 100%;
+        display: inline-block;
+}
+
+/* Creating responsive video for desktops, mobiles and tablets */
+@media (min-width: 420px) {
+    video {
+        max-width: 58%;
+  }
+}
+@media (min-width: 760px) {
+    video {
+        max-width: 84%;
+  }
+}
+ 
+ 
+/*Styling and formatting the headings for the contents*/
+h1, h2, h3, h4, h5, h6 {
+    font: normal 175% 'AR CENA', arial, sans-serif;
+    color: #000000;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+  
+  
+h1 {
+     text-shadow: 2px 2px, #87CEEB;
+     letter-spacing: -0.015em
+}
+
+h2 { 
+    font: normal 180% 'AR CENA', arial, sans-serif;
+    color: #B60000;
+    font-weight: 600;
+}
+
+h3 {
+    font: normal 120% 'AR CENA', arial, sans-serif;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font: normal 100% arial, sans-serif;
+    color: #B60000;}
+
+h5, h6
+{ font: italic 95% arial, sans-serif;
+  color: #888;}
+
+h6
+{ color: #362C20;}
+
+ /*  Creating responsive Content Headers for desktops, mobiles and tablets */
+  @media (min-width: 420px) {
+  h1,h2,h3,h4,h5,h6 {
+    max-width: 48%;
+  }
+}
+
+@media (min-width: 760px) {
+  h1,h2,h3,h4,h5,h6 {
+    max-width: 84%;
+  }
+}
+
+/*------------------*/
+a, a:hover							
+{ outline: none;
+  text-decoration: underline;
+  color: blue;}
+
+a:hover
+{ text-decoration: none;
+  color: #5D5D5D;}	 /* Change Colour on Hover of text  */
+
+.left
+{ float: left;	/* Wrapping text around image placed on the left   */
+  width: auto;
+  margin-right: 10px;}
+
+/* Wrapping text around image placed on the right   */
+.right
+{ float: right; 
+  width: auto;
+  margin-left: 10px;}
+
+  
+ /* Ordered/Unordered List */
+ul
+{ margin: 2px 0 22px 17px;}			
+
+ul li
+{ list-style-type: circle;			/* Change in List style to Circle Bullets */
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+ol li
+{ margin: 0 0 11px 0;}
+
+
+/*  Responsive Unordered Lists for desktops, mobiles and tablets */
+  @media (min-width: 420px) {
+  ul {
+    max-width: 48%;
+  }
+}
+@media (min-width: 760px) {
+  ul {
+    max-width: 84%;
+  }
+}
+  
+ /*  Creating responsive ordered List  for desktops, mobiles and tablets */
+  @media (min-width: 420px) {
+  ol {
+    max-width: 48%;
+  }
+}
+@media (min-width: 760px) {/
+  ol {
+    max-width: 84%;
+  }
+}
+  
+
+#home, #topnav, #content_header, #site_content { 
+    margin-left: auto; 
+    margin-right: auto;
+ }
+
+#home{ 
+    padding-bottom: 10px;
+}
+
+#header
+{ background: #97A4E6;
+  height: 50px;					
+  margin-bottom: 25px;}
+
+/*Styling for the navigation bar */
+#topnav { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: teal;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+
+  } 
+
+ul#nav
+{ float: left;
+
+}
+
+ul#nav li
+{ float: left;
+  padding: 0 0 0 6px;
+  list-style: none;
+  margin: 2px 2px 0 0;
+  background: url(matrix.png) no-repeat 0 0;}
+
+ul#nav li a
+{ font: normal 130% 'Consolas', sans-serif;
+  display: block; 
+  float: left; 
+  height: 0px;
+  padding: 15px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  background: url(matrix.png) no-repeat 100% 0;} 
+
+ul#nav li.tab_selected a
+{ height: 50px;
+  padding: 6px 28px 5px 22px;}
+
+ul#nav li.selected
+{ margin: 2px 2px 0 0;
+  background: #97A4E6 url(tab_selected.png) no-repeat 0 0;}
+
+ul#nav li.selected a, ul#nav li.selected a:hover
+{ background: #97A4E6 url(tab_selected.png) no-repeat 100% 0;
+  color: #111;}
+
+ul#nav li a:hover
+{ color: blue;}
+
+
+
+/*  Navigation Bar Formating */
+#content_header
+{ width: 900px;
+  background: url(images/bg-navigation.png) no-repeat;
+  height: 14px;}
+
+/*Data contents*/
+#site_content{
+  width: 75%;  
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 0 20px 20px 40px;
+  background: #87CEFA;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border: 10px solid #B0C4DE;
+  
+  } 
+/*Formatting, Styling and catching boders,padding,color for sidebar and its contents*/
+.sidebar{ 
+    float: right;
+    width: 300px;
+    padding: 0 0 20px 15px;}
+
+.sidebar ul{
+    width: 200px; 
+    padding: 4px 0 0 0; 
+    margin: 4px 0 30px 0;}
+
+.sidebar li
+{   list-style: none; 
+    padding: 0 0 7px 0; }
+
+.sidebar li a, .sidebar li a:hover
+{   padding: 0 0 0 35px; 
+    display: block;
+    background: transparent url(link.png) no-repeat left center;} 
+
+.sidebar li a.selected
+{   color: #444;
+    text-decoration: none;} 
+
+#content
+{   text-align: left;					
+    width: 613px;
+    padding: 0;}
+
+#content ul{  
+    margin: 2px 0 22px 0px;}
+
+#content ul li{
+    list-style-type: none;
+    background: url(bullet.png) no-repeat; 
+    margin: 0 0 6px 0; 
+    padding: 0 0 4px 25px;
+    line-height: 1.5em;
+} 
+
+/* Style inputs for contact form*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+  
